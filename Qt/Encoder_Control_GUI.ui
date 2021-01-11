@@ -43,7 +43,7 @@
       <enum>Qt::Horizontal</enum>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox">
+    <widget class="QCheckBox" name="RegisterEnco">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -82,7 +82,7 @@
     <property name="title">
      <string>Afficher données</string>
     </property>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QPushButton" name="DisplayPlotButton">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -95,7 +95,7 @@
       <string>Graphique de donnée</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber">
+    <widget class="QLCDNumber" name="lcdTimeRecording">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -118,7 +118,7 @@
       <string>Time recording</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_2">
+    <widget class="QLCDNumber" name="lcdPositionChange">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -141,7 +141,7 @@
       <string>Position Change</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_3">
+    <widget class="QLCDNumber" name="lcdTimeChange">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -151,7 +151,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_4">
+    <widget class="QLCDNumber" name="lcdIndexTriggered">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -187,7 +187,7 @@
       <string>Index Triggered</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
+    <widget class="QPushButton" name="DisplayData">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -213,7 +213,7 @@
     <property name="title">
      <string>Fichier</string>
     </property>
-    <widget class="QTextEdit" name="textEdit">
+    <widget class="QTextEdit" name="textEditFile">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -236,7 +236,7 @@
       <string>Fichier</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="FileConfirmButton">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -249,7 +249,7 @@
       <string>Confirmer</string>
      </property>
     </widget>
-    <widget class="QTextEdit" name="textEdit_2">
+    <widget class="QTextEdit" name="textEditDirectory">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -259,7 +259,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="DirectoryConfirmB">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -308,7 +308,7 @@
       <string>Data Interval</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="DataIntervalButton">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -334,7 +334,7 @@
     <property name="title">
      <string>Connectivité</string>
     </property>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="ToConnectButton">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -347,7 +347,7 @@
       <string>Lancer connexion</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QPushButton" name="ToDisconnectButton">
      <property name="geometry">
       <rect>
        <x>10</x>
