@@ -104,6 +104,9 @@ class Ui_Tester(object):
         self.ToDisconnectButton = QtWidgets.QPushButton(self.groupBox_5)
         self.ToDisconnectButton.setGeometry(QtCore.QRect(10, 70, 171, 31))
         self.ToDisconnectButton.setObjectName("ToDisconnectButton")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(10, 480, 441, 17))
+        self.label_8.setObjectName("label_8")
         Tester.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(Tester)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 673, 22))
@@ -139,6 +142,7 @@ class Ui_Tester(object):
         self.groupBox_5.setTitle(_translate("Tester", "Connectivité"))
         self.ToConnectButton.setText(_translate("Tester", "Lancer connexion"))
         self.ToDisconnectButton.setText(_translate("Tester", "Déconnexion"))
+        self.label_8.setText(_translate("Tester", "https://github.com/WilliamBonilla62/GUIPythonEncodeur"))
 
 
 if __name__ == "__main__":

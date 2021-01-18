@@ -361,6 +361,19 @@
      </property>
     </widget>
    </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>480</y>
+      <width>441</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>https://github.com/WilliamBonilla62/GUIPythonEncodeur</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
