@@ -53,7 +53,7 @@
          <item>
           <widget class="QPushButton" name="ToConnectButton">
            <property name="text">
-            <string>connexion</string>
+            <string>Connexion</string>
            </property>
           </widget>
          </item>
@@ -67,14 +67,14 @@
          <item>
           <widget class="QPushButton" name="DisplayPlotButton">
            <property name="text">
-            <string>graphique</string>
+            <string>Graphique</string>
            </property>
           </widget>
          </item>
          <item>
           <widget class="QPushButton" name="DisplayData_2">
            <property name="text">
-            <string>reset distance</string>
+            <string>Reset distance</string>
            </property>
           </widget>
          </item>
