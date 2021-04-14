@@ -94,7 +94,7 @@
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_8">
            <item>
-            <widget class="QLabel" name="label_2">
+            <widget class="QLabel" name="textBoxDirectory">
              <property name="text">
               <string>Dossier</string>
              </property>
@@ -115,7 +115,7 @@
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_4">
            <item>
-            <widget class="QLabel" name="label">
+            <widget class="QLabel" name="textBoxFile">
              <property name="text">
               <string>Fichier</string>
              </property>
@@ -145,7 +145,7 @@
        <item row="1" column="0">
         <layout class="QVBoxLayout" name="verticalLayout_9">
          <item>
-          <widget class="QLabel" name="label_7">
+          <widget class="QLabel" name="textBoxDataInterval">
            <property name="text">
             <string>Data Interval</string>
            </property>
@@ -200,7 +200,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="lcdTextTimeRecording">
          <property name="text">
           <string>Time recording [s]</string>
          </property>
@@ -217,7 +217,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_4">
+        <widget class="QLabel" name="lcdTextPositionChange">
          <property name="text">
           <string>Position Change</string>
          </property>
@@ -234,7 +234,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_5">
+        <widget class="QLabel" name="lcdTextTimeChange">
          <property name="text">
           <string>Time change [ms]</string>
          </property>
@@ -251,7 +251,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="lcdTextDistance">
          <property name="text">
           <string>Distance [dm]</string>
          </property>
