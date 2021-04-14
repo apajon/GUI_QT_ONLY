@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>592</width>
+    <width>595</width>
     <height>334</height>
    </rect>
   </property>
@@ -72,7 +72,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="DisplayData_2">
+          <widget class="QPushButton" name="ToResetDistance">
            <property name="text">
             <string>Reset distance</string>
            </property>
@@ -152,7 +152,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QSpinBox" name="spinBox"/>
+          <widget class="QSpinBox" name="DataIntervalSpinBox"/>
          </item>
          <item>
           <widget class="QPushButton" name="DataIntervalButton">
