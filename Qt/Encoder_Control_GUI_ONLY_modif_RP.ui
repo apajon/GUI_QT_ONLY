@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tester</class>
+ <widget class="QMainWindow" name="Tester">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>720</width>
+    <height>356</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Interface de contrôle</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Downloads/Cirris.ico</normaloff>../../Downloads/Cirris.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="1">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="minimumSize">
+         <size>
+          <width>589</width>
+          <height>271</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Connexion</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_3">
+            <property name="title">
+             <string>Afficher données</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLCDNumber" name="lcdTimeRecording">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lcdTextTimeRecording">
+               <property name="text">
+                <string>Time recording [s]</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdPositionChange">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lcdTextPositionChange">
+               <property name="text">
+                <string>Position Change</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdTimeChange">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lcdTextTimeChange">
+               <property name="text">
+                <string>Time change [ms]</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLCDNumber" name="lcdDistance">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="lcdTextDistance">
+               <property name="text">
+                <string>Distance [dm]</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="title">
+               <string>Encoder</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QSlider" name="RecordingEnco">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="RegisterEnco">
+                 <property name="text">
+                  <string>Enregistrement</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>Connectivité</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QPushButton" name="ToConnectButton">
+                 <property name="text">
+                  <string>Connexion</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="ToDisconnectButton">
+                 <property name="text">
+                  <string>Déconnexion</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="ToResetDistance">
+                 <property name="text">
+                  <string>Reset distance</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Options</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="0">
+           <widget class="QGroupBox" name="groupBox_4">
+            <property name="title">
+             <string/>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0" colspan="2">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item>
+                  <widget class="QLabel" name="textBoxDirectory">
+                   <property name="text">
+                    <string>Dossier</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="textEditDirectory"/>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="DirectoryConfirmB">
+                   <property name="text">
+                    <string>Confirmer</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="textBoxFile">
+                   <property name="text">
+                    <string>Fichier</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QTextEdit" name="textEditFile">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="FileConfirmButton">
+                   <property name="text">
+                    <string>Confirmer</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="1" column="0">
+                <widget class="QSpinBox" name="DataIntervalSpinBox">
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="tabletTracking">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="textBoxDataInterval">
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="tabletTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Data Interval</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="DataIntervalButton">
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="tabletTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Confirmer</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Graphique</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0">
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="1" column="0">
+             <widget class="QPushButton" name="DisplayPlotButton">
+              <property name="text">
+               <string>Graphique</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QGraphicsView" name="graphicsView"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>À propos</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="urlRepo">
+            <property name="text">
+             <string>Repo Git: https://github.com/WilliamBonilla62/GUIPythonEncodeur</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="urlRepo_2">
+            <property name="text">
+             <string>Version 0.2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>566</width>
+               <height>182</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Remerciements&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>William Ricardo Bonilla Villatero</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Adrien Pajon</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Raymond-Pierre Bouchard</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="1" alignment="Qt::AlignBottom">
+     <widget class="QPushButton" name="CloseButton">
+      <property name="text">
+       <string>Fermer</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>720</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>Aide</string>
+    </property>
+    <addaction name="actionRepo"/>
+    <addaction name="separator"/>
+    <addaction name="action_propos"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Affichage</string>
+    </property>
+    <widget class="QMenu" name="menuCouleur">
+     <property name="title">
+      <string>Couleur</string>
+     </property>
+     <addaction name="actionMode_clair"/>
+     <addaction name="actionMode_somble"/>
+     <addaction name="actionBleu"/>
+     <addaction name="actionRouge"/>
+     <addaction name="actionVert"/>
+    </widget>
+    <widget class="QMenu" name="menuLanguage_2">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <addaction name="actionFR_2"/>
+     <addaction name="actionENG_2"/>
+    </widget>
+    <addaction name="menuCouleur"/>
+    <addaction name="separator"/>
+    <addaction name="menuLanguage_2"/>
+   </widget>
+   <addaction name="menuAffichage"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionFR">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>FR</string>
+   </property>
+  </action>
+  <action name="actionENG">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>ENG</string>
+   </property>
+  </action>
+  <action name="actionRepo">
+   <property name="text">
+    <string>Documentation en ligne</string>
+   </property>
+  </action>
+  <action name="actionMode_clair">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Mode clair</string>
+   </property>
+  </action>
+  <action name="actionMode_somble">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Mode somble</string>
+   </property>
+  </action>
+  <action name="actionBleu">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Bleu</string>
+   </property>
+  </action>
+  <action name="actionRouge">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Rouge</string>
+   </property>
+  </action>
+  <action name="actionVert">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Vert</string>
+   </property>
+  </action>
+  <action name="actionFR_2">
+   <property name="text">
+    <string>FR</string>
+   </property>
+  </action>
+  <action name="actionENG_2">
+   <property name="text">
+    <string>ENG</string>
+   </property>
+  </action>
+  <action name="action_propos">
+   <property name="text">
+    <string>À propos</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
